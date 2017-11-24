@@ -5,8 +5,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -20,13 +18,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.beust.jcommander.Strings;
-import com.google.common.base.Function;
-
 import interFace.iExecuteInterface;
+
 public class DSL {
     private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
     
@@ -43,6 +38,7 @@ public class DSL {
     	setWebDriver(driver);
     	getDriver().get(URL);
     }
+    
     
     public static WebElement getObject(By by){
     	return getDriver().findElement(by);    	
