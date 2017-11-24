@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="303" started-at="2017-11-21T04:05:19Z" finished-at="2017-11-21T04:05:20Z">
+    <groups>
+      <group name="database">
+        <method signature="TestGrouping.testConnectMsSQL()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="testConnectMsSQL" class="testCases.TestGrouping"/>
+        <method signature="TestGrouping.testConnectOracle()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="testConnectOracle" class="testCases.TestGrouping"/>
+      </group> <!-- database -->
+      <group name="selenium-test">
+        <method signature="TestGrouping.runSelenium()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="runSelenium" class="testCases.TestGrouping"/>
+        <method signature="TestGrouping.runSelenium1()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="runSelenium1" class="testCases.TestGrouping"/>
+      </group> <!-- selenium-test -->
+    </groups>
+    <test name="Default test" duration-ms="303" started-at="2017-11-21T04:05:19Z" finished-at="2017-11-21T04:05:20Z">
+      <class name="testCases.TestGrouping">
+        <test-method status="PASS" signature="runSelenium()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="runSelenium" duration-ms="68" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runSelenium -->
+        <test-method status="PASS" signature="runSelenium1()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="runSelenium1" duration-ms="2" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runSelenium1 -->
+        <test-method status="PASS" signature="setupDB()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="setupDB" is-config="true" duration-ms="1" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDB -->
+        <test-method status="PASS" signature="testConnectMsSQL()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="testConnectMsSQL" duration-ms="2" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnectMsSQL -->
+        <test-method status="PASS" signature="testConnectOracle()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="testConnectOracle" duration-ms="2" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnectOracle -->
+        <test-method status="PASS" signature="cleanDB()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="cleanDB" is-config="true" duration-ms="0" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDB -->
+        <test-method status="PASS" signature="runFinal()[pri:0, instance:testCases.TestGrouping@14acaea5]" name="runFinal" duration-ms="1" depends-on-groups="database, selenium-test" started-at="2017-11-21T12:05:20Z" finished-at="2017-11-21T12:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFinal -->
+      </class> <!-- testCases.TestGrouping -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
